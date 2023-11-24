@@ -1,9 +1,11 @@
 var d2gsi = require('dota2-gsi');
-var server = new d2gsi();
+
 
 const options ={
     port: `${process.env.SERVERIP}`
 }
+
+var server = new d2gsi([options]);
 const tmi = require('tmi.js');
 require('dotenv').config();
 // Define configuration options
